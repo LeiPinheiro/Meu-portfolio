@@ -1,0 +1,89 @@
+
+.contactContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin-top: 4rem;
+    height: 20rem;
+}
+
+.contactOptionsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contactOptionsContainer button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.6rem 1rem;
+    color: rgb(245, 245, 245);
+    gap: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: 500ms ease;
+}
+
+.contactOptionsContainer button {
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.253);
+    transition: 500ms ease;
+}
+
+.contactOptionsContainer p{
+    color: white;
+    font-weight: 500;
+    margin-top: 1rem;
+    transition: 500ms ease;
+}
+
+.phoneNumberContainer button {
+    background-color: rgb(20, 214, 29);
+    
+}
+
+
+.emailContainer button {
+    background-color: rgb(190, 6, 6);
+}
+
+.phoneNumberContainer button:hover{
+    background-color: rgb(15, 230, 26);
+}
+
+.phoneNumberContainer a:hover{
+    color: black;
+}
+
+.phoneNumberContainer p:hover{
+    color: grey;
+}
+
+.emailContainer button:hover {
+    background-color: rgb(219, 9, 9);
+}
+
+.emailContainer a:hover {
+    color: black;
+}
+
+.emailContainer p:hover{
+    color: grey;
+}
+
+@media screen and (max-width: 1000px) {
+    .contactOptionsContainer {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        font-size: 0.8rem;
+    }
+    .contactOptionsContainer button a {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,106 @@
+
+
+header .navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    height: 17vh;
+    margin-top: 1rem;
+    background-color: white;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.logoContainer p{
+    display: flex;
+    font-size: 3rem;
+    align-items: center;
+    text-align: center;
+}
+
+.ulContainer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    font-size: 1.7rem;
+}
+
+.ulContainer li{
+    color: black;
+    transition: 200ms all ease;
+}
+
+.ulContainer li:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.mobileMenuIcon .icon {
+    height: 1.8rem;
+}
+
+.mobileMenuIcon {
+    display: none;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+.mobileMenu.open {
+    display: block;
+}
+
+@media screen and (max-width: 1000px) {
+    header .navContainer {
+        height: 17vh;
+        padding: 0;
+    }
+    .list{
+        display: none;
+    }
+    .mobileMenuIcon {
+        display: block;
+        margin-right: 4rem;
+    }
+    .mobileMenuIcon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobileMenu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 1rem;
+        height: 100%;
+        background-color: rgb(247, 245, 245);
+        width: 100vw;
+        top: 17vh;
+    }
+    .mobileMenu .list, .link {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: black;
+    }
+    .mobileMenu a:hover {
+        color: grey;
+        text-decoration: underline;
+        text-underline-offset: 0.6rem;
+    }
+}
+@media screen and (min-width: 1001px) {
+    .mobileMenu, .mobileMenu a {
+        display: none;
+    }
+}

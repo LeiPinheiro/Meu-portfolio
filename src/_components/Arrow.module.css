@@ -1,0 +1,30 @@
+.arrowContainer {
+    position: absolute;
+    top: 1340px;
+    right: 90px;
+}
+
+
+.arrowContainer a{
+    font-size: 1.8rem;
+    position: fixed;
+    top: 500px;
+    padding: 0.4rem 0.5rem;
+    border-radius: 40%;
+    background-color: white;
+    border: 1px solid grey;
+    transition: 500ms ease;
+    
+
+}
+
+.arrowContainer a:hover{
+    padding: 0.6rem 0.7rem;
+}
+
+@media screen and (max-width: 600px){
+    .arrowContainer a{
+        font-size: 1.4rem;
+        padding: 0.2rem 0.3rem;
+    }
+}

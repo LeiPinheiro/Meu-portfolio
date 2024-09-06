@@ -1,0 +1,23 @@
+.teste {
+    display: grid;
+    margin-top: 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 3rem;
+    margin-left: 16rem;
+    margin-right: 15rem;
+    transition: 100ms ease;
+}
+
+@media screen and (max-width: 1000px) {
+    .teste {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
