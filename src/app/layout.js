@@ -1,5 +1,6 @@
 import { Inter,Poppins } from "next/font/google";
 import "./globals.css";
+import "animate.css/animate.compat.css"
 
 const poppins = Poppins({ subsets: ["latin"],
   weight: ['100', '200', '300', '400', '500', '700', '800', '900' ]
