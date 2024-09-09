@@ -15,7 +15,7 @@ function ContactSec (){
                 </div>
                 <div className={styles.emailContainer}>
                     <button><a href="mailto:contatopinheirolei@gmail.com" target="blank"><MdAlternateEmail />Entre em contato por Email</a></button>
-                    <p>Meu gmail: contatopinheirolei8@gmail.com</p>
+                    <p>Meu gmail: contatopinheirolei@gmail.com</p>
                 </div>
             </div>
         </div>
