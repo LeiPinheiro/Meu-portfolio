@@ -2,6 +2,8 @@
 import styles from "./Header.module.css"
 import { FaCode } from "react-icons/fa";
 import { useState } from "react";
+import { IoMdMenu } from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +22,9 @@ function Header() {
                     <li className={styles.list}><a href="#contato" className={styles.link}>Contato</a></li>
                 </ul>
                 <div className={styles.mobileMenuIcon}>
-                    <button onClick={toggleMenu}><img src={isMenuOpen ? "/close.png" : "/menu.png"} alt="Menu Icon" className={styles.icon}/></button>
+                    <button onClick={toggleMenu}>
+                        {isMenuOpen ? <IoMdClose  className={styles.icon}/> : <IoMdMenu className={styles.icon}/>}
+                    </button>
                 </div>
             </nav>
             <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.open : ''}`}>
