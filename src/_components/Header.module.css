@@ -63,6 +63,10 @@ header .navContainer {
     header .navContainer {
         height: 17vh;
         padding: 0;
+        justify-content: space-between;
+    }
+    .logoContainer p{
+        margin-left: 4rem;
     }
     .list{
         display: none;
@@ -92,11 +96,6 @@ header .navContainer {
         font-size: 1.3rem;
         text-decoration: none;
         color: black;
-    }
-    .mobileMenu a:hover {
-        color: grey;
-        text-decoration: underline;
-        text-underline-offset: 0.6rem;
     }
 }
 @media screen and (min-width: 1001px) {
